@@ -9,6 +9,6 @@
 
 
 Score_Player <- function(x) {
-  load("~/Rpackage/ScorePlayer/data/Seasons_Stats_NBA.RData")
+  load("~/Rpackage/NBAPackage/data/Seasons_Stats_NBA.RData")
   dplyr::select(subset(filter(d, Year == x), PTS == max(PTS)), Player)
 }

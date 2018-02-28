@@ -9,7 +9,7 @@
 
 
 Oldest_Player <- function(x) {
-  load("~/Rpackage/OldestPlayer/data/Seasons_Stats_NBA.RData")
+  load("~/Rpackage/NBAPackage/data/Seasons_Stats_NBA.RData")
   dplyr::select(subset(filter(d, Year == x), Age == max(Age)), Player)
 }
 

@@ -9,7 +9,7 @@
 
 
 Numeric_Correlation <- function(x) {
-  d = read.csv("~/Desktop/Seasons_Stats_NBA.csv")
+  load("~/Rpackage/NBAPackage/data/Seasons_Stats_NBA.RData")
   cor(purrr::keep(filter(d, Year == x), is.numeric))
 }
 
