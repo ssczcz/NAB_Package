@@ -1,0 +1,35 @@
+---
+title: "Assignment 2"
+author: "Jianren Zhou"
+date: "February 7, 2018"
+output:
+  pdf_document:
+        number_sections: yes
+        
+---
+
+```{r setup, include=FALSE}
+work_dir <- "/Users/Joe/Desktop"
+setwd(work_dir)
+library(tidyverse)
+library(tibble)
+library(tidyr)
+library(dplyr)
+library(purrr)
+
+```
+
+# Which NBA player scored the most points in 1991?
+```{r}
+devtools::install_github("ssczcz/NBA_Package/ScorePlayer")
+library(ScorePlayer)
+Score_Player(1991)
+```
+
+```{r}
+Numeric_Correlation <- function(x) {
+d = read.csv("~/Desktop/Seasons_Stats_NBA.csv")
+head(cor(keep(filter(d, Year == x), is.numeric)), n = 10)
+}
+Numeric_Correlation(1994)
+```

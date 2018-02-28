@@ -7,7 +7,7 @@
 Numeric_Correlation(x)
 }
 \description{
-This function allows you to creat correlation matrix for all numeric variables in NBA data for a specific year.
+This function allows you to create correlation matrix for all numeric variables in NBA data for a specific year.
 }
 \examples{
 Numeric_Correlation(1991)
