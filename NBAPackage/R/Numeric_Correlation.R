@@ -10,6 +10,6 @@
 
 Numeric_Correlation <- function(x) {
   load("~/Rpackage/NBAPackage/data/Seasons_Stats_NBA.RData")
-  cor(purrr::keep(filter(d, Year == x), is.numeric))
+  head(cor(purrr::keep(filter(d, Year == x), is.numeric)), n = 10)
 }
 
