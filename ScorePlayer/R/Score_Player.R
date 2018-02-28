@@ -9,7 +9,7 @@
 
 
 Score_Player <- function(x) {
-  load("~/Rpackage/OldestPlayer/data/Seasons_Stats_NBA.RData")
+  load("~/Rpackage/ScorePlayer/data/Seasons_Stats_NBA.RData")
   dplyr::arrange(filter(d, Year == x), desc(PTS))[1, 2]
 }
 
