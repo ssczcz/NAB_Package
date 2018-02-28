@@ -1,6 +1,6 @@
 #' A NBA Data Function
 #'
-#' This function allows you to creat correlation matrix for all numeric variables in NBA data for a specific year.
+#' This function allows you to create correlation matrix for all numeric variables in NBA data for a specific year.
 #' @x selected year
 #' @keywords correlation matrix, numeric variables
 #' @export
