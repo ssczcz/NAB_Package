@@ -9,7 +9,7 @@
 
 
 Oldest_Player <- function(x) {
-  load("~/NAB_Package/OldestPlayer/data/Seasons_Stats_NBA.RData")
+  load("~/Rpackage/OldestPlayer/data/Seasons_Stats_NBA.RData")
   d$Player
 }
 
