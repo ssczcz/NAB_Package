@@ -1,0 +1,9 @@
+{
+    "path" : "~/Rpackage/NBAPackage",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
