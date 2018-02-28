@@ -10,6 +10,6 @@
 
 Oldest_Player <- function(x) {
   load("~/Rpackage/OldestPlayer/data/Seasons_Stats_NBA.RData")
-  d$Player
+  dplyr::arrange(filter(d, Year == x), desc(Age))[1, 2]
 }
 
